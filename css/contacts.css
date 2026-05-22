@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700&display=swap');
+p {
+    font-size: 18px;
+    color: #4a4a4a;
+}
+
+.contacts-logo {
+    background-color: #3CE2B2;
+    width: 100%;
+    position: fixed;
+}
+
+body {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background: #FFFFFF;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Inter', sans-serif;
+    line-height: 1.5;
+    color: #1a1a1a;
+    overflow: hidden;
+}
+
+.logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.about-ul {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.logo div:first-child {
+    font-size: 24px;
+    font-weight: 700;
+    margin-right: auto;
+}
+
+header {
+    background-color: #3CE2B2;
+    bottom: 8px;
+}
