@@ -1,14 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700&display=swap');
-h1 {
-    font-size: 56px;
-    font-weight: 700;
-    letter-spacing: -0.32px;
-    margin: 8px 0;
-}
-
 p {
     font-size: 18px;
     color: #4a4a4a;
+}
+
+.contacts-logo {
+    background-color: #3CE2B2;
+    width: 100%;
+    position: fixed;
 }
 
 body {
@@ -24,6 +23,13 @@ body {
     overflow: hidden;
 }
 
+.logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
 .about-ul {
     display: flex;
     flex-direction: row;
@@ -33,15 +39,10 @@ body {
     padding: 0;
 }
 
-.index-footer {
-    background-color: #3CE2B2;
-    width: 100%;
-    position: fixed;
-    bottom: 0px;
-}
-
-.main-block {
-    margin: 0px;
+.logo div:first-child {
+    font-size: 24px;
+    font-weight: 700;
+    margin-right: auto;
 }
 
 header {
@@ -49,17 +50,3 @@ header {
     bottom: 8px;
     padding: 10px;
 }
-
-.logo {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-}
-
-.logo div:first-child {
-    font-size: 24px;
-    font-weight: 700;
-    margin-right: auto;
-}
-
