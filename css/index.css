@@ -21,6 +21,7 @@ body {
     font-family: 'Inter', sans-serif;
     line-height: 1.5;
     overflow: hidden;
+    min-height: 100vh;
 }
 
 .about-ul {
