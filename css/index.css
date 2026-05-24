@@ -15,12 +15,11 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background: #FFFFFF;
+    background-image: url('/files/Frame_2087326459.png');
     margin: 0px;
     padding: 0px;
     font-family: 'Inter', sans-serif;
     line-height: 1.5;
-    color: #1a1a1a;
     overflow: hidden;
 }
 
