@@ -15,7 +15,8 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-image: url('/files/Frame_2087326459.png');
+    background-image: url('files/Frame_2087326459.png');
+    background-attachment: fixed;
     margin: 0px;
     padding: 0px;
     font-family: 'Inter', sans-serif;
