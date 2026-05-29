@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 message: message
             };
             
-            const backendUrl = 'https://адрес-бэкенда-вашего-коллеги.ru/api/send-message'; //Нужен url Максима
+            const backendUrl = 'https://httpbin.org/post';
 
             try {
                 const response = await fetch(backendUrl, {
