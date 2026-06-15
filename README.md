@@ -1,1 +1,1 @@
-https://morner01.github.io/music/
+https://morner01.github.io/music/pages/index.html
