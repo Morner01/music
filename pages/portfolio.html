@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WAVEFORM — Портфолио</title>
+  <link rel="stylesheet" href="css/portfolio.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700;14..32,800;14..32,900&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ===== HEADER / НАВИГАЦИЯ ===== -->
+  <header class="header">
+    <div class="container header__inner">
+      <!-- Логотип -->
+      <div class="logo">
+        <div class="logo__icon">
+          <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="3" y="3" width="30" height="30" rx="8" stroke="currentColor" stroke-width="2.5" />
+            <path d="M11 14L11 22" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" />
+            <path d="M18 9L18 27" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" />
+            <path d="M25 14L25 22" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" />
+            <circle cx="18" cy="18" r="4" fill="currentColor" />
+          </svg>
+        </div>
+        <a class="logo__text" href="./index.html"><strong>WAVEFORM</strong></a>
+      </div>
+
+      <!-- Навигация -->
+      <nav class="nav">
+        <ul class="nav__list">
+          <li><a href="./index.html" class="nav__link">Главная</a></li>
+          <li><a href="./services.html" class="nav__link">Услуги</a></li>
+          <li><a href="./about.html" class="nav__link active">Портфолио</a></li>
+          <li><a href="./contacts.html" class="nav__link">Контакты</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== MAIN CONTENT ===== -->
+  <main>
+    <section class="portfolio">
+      <div class="container">
+        <!-- Заголовок страницы -->
+        <div class="portfolio__header">
+          <h1 class="portfolio__title">
+            Наше <span class="portfolio__title-accent">портфолио</span>
+          </h1>
+          <p class="portfolio__subtitle">
+            Каждый трек — это история. Здесь собраны работы, которыми мы гордимся.
+          </p>
+        </div>
+
+        <!-- Сетка портфолио -->
+        <div class="portfolio__grid">
+          <div class="portfolio__item">
+            <img src="./files/trek1.jpg" alt="Heart" class="portfolio__image" />
+            <div class="portfolio__overlay">
+              <span class="portfolio__name">Heart</span>
+            </div>
+          </div>
+          <div class="portfolio__item">
+            <img src="./files/trek2.jpg" alt="City wave" class="portfolio__image" />
+            <div class="portfolio__overlay">
+              <span class="portfolio__name">City wave</span>
+            </div>
+          </div>
+          <div class="portfolio__item">
+            <img src="./files/trek3.jpg" alt="I'm back" class="portfolio__image" />
+            <div class="portfolio__overlay">
+              <span class="portfolio__name">I'm back</span>
+            </div>
+          </div>
+          <div class="portfolio__item">
+            <img src="./files/trek4.jpg" alt="Forever" class="portfolio__image" />
+            <div class="portfolio__overlay">
+              <span class="portfolio__name">Forever</span>
+            </div>
+          </div>
+          <div class="portfolio__item">
+            <img src="./files/trek5.jpg" alt="Heretoir" class="portfolio__image" />
+            <div class="portfolio__overlay">
+              <span class="portfolio__name">Heretoir</span>
+            </div>
+          </div>
+          <div class="portfolio__item">
+            <img src="./files/trek6.jpg" alt="Vinyl life" class="portfolio__image" />
+            <div class="portfolio__overlay">
+              <span class="portfolio__name">Vinyl life</span>
+            </div>
+          </div>
+          <div class="portfolio__item">
+            <img src="./files/trek7.jpg" alt="Ether" class="portfolio__image" />
+            <div class="portfolio__overlay">
+              <span class="portfolio__name">Ether</span>
+            </div>
+          </div>
+          <div class="portfolio__item">
+            <img src="./files/trek8.jpg" alt="Tycho" class="portfolio__image" />
+            <div class="portfolio__overlay">
+              <span class="portfolio__name">Tycho</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <strong>WAVEFORM</strong> — цифровая экосистема звука и визуала.
+      </div>
+      <div class="footer__copy">
+        © 2026 WAVEFORM. Все права защищены.
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

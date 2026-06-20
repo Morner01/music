@@ -1,48 +1,82 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>WAVEFORM - Главная</title>
-  <link rel="stylesheet" href="css/index.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WAVEFORM — студия звукозаписи</title>
+  <link rel="stylesheet" href="css/index.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700;14..32,800;14..32,900&display=swap" rel="stylesheet" />
 </head>
 <body>
-  <!-- Навигация (меню: О Нас, Услуги, Портфолио, Контакты) -->
-  <header>
-    <div>
-      <!-- Навигационное меню -->
-      <nav class="logo">
-        <!-- Логотип -->
-        <div>
-          <strong>WAVEFORM</strong>
+
+  <!-- ===== HEADER / НАВИГАЦИЯ ===== -->
+  <header class="header">
+    <div class="container header__inner">
+      <!-- Логотип (без перевода) -->
+      <div class="logo">
+        <div class="logo__icon">
+          <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="3" y="3" width="30" height="30" rx="8" stroke="currentColor" stroke-width="2.5" />
+            <path d="M11 14L11 22" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" />
+            <path d="M18 9L18 27" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" />
+            <path d="M25 14L25 22" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" />
+            <circle cx="18" cy="18" r="4" fill="currentColor" />
+          </svg>
         </div>
-        <ul class="about-ul">
-          <li><a href="./index.html">Главная</a></li>
-          <li><a href="./services.html" class="services-btn">Услуги</a></li>
-          <li><a href="./about.html">Портфолио</a></li>
-          <li><a href="./contacts.html" class="contact-btn">Контакты</a></li>
+        <a class="logo__text" href="./index.html"><strong>WAVEFORM</strong></a>
+      </div>
+
+      <!-- Навигация (переведена) -->
+      <nav class="nav">
+        <ul class="nav__list">
+          <li><a href="./index.html" class="nav__link">Главная</a></li>
+          <li><a href="./services.html" class="nav__link">Услуги</a></li>
+          <li><a href="./portfolio.html" class="nav__link">Портфолио</a></li>
+          <li><a href="./contacts.html" class="nav__link">Контакты</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <!-- Главный блок -->
+  <!-- ===== MAIN CONTENT ===== -->
   <main>
-    <section class="main-block">
+    <section class="hero">
+      <div class="container hero__grid">
+        <!-- Левая колонка: текст (переведен) -->
+        <div class="hero__content">
+          <h1 class="hero__title">
+            Звук, который<br />
+            <span class="hero__title-accent">ВДОХНОВЛЯЕТ</span>
+          </h1>
+          <p class="hero__desc">
+            Сделайте каждый трек мощным с профессиональным студийным продакшеном.
+          </p>
+          <!-- Кнопка (переведена) -->
+          <a href="./contacts.html" class="btn btn--primary">ЗАПИСАТЬСЯ</a>
+        </div>
 
-      <div>
-        <div>
+        <!-- Правая колонка: визуальный элемент -->
+        <div class="hero__visual">
+          <div class="visual__circle">
+            <div class="visual__inner"></div>
+            <div class="visual__pulse"></div>
+          </div>
         </div>
       </div>
     </section>
-
   </main>
 
-  <!-- Нижняя часть -->
-  <footer>
-    <div class="index-footer">
-      <p><strong>WAVEFORM</strong> — цифровая экосистема звука и визуала.</p>
-      <p>© 2026 WAVEFORM. Все права защищены.</p>
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <strong>WAVEFORM</strong> — цифровая экосистема звука и визуала.
+      </div>
+      <div class="footer__copy">
+        © 2026 WAVEFORM. Все права защищены.
+      </div>
     </div>
   </footer>
 

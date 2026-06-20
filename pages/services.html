@@ -1,65 +1,164 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WAVEFORM - Услуги</title>
-    <link rel="stylesheet" href="css/services.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WAVEFORM — Услуги</title>
+  <link rel="stylesheet" href="css/services.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700;14..32,800;14..32,900&display=swap" rel="stylesheet" />
 </head>
 <body>
-    <section>
-        <header>
-    <div>
-      <!-- Навигационное меню -->
-      <nav class="logo">
-        <!-- Контакты -->
-        <div>
-          <strong>WAVEFORM</strong>
+
+  <!-- ===== HEADER / НАВИГАЦИЯ ===== -->
+  <header class="header">
+    <div class="container header__inner">
+      <!-- Логотип -->
+      <div class="logo">
+        <div class="logo__icon">
+          <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="3" y="3" width="30" height="30" rx="8" stroke="currentColor" stroke-width="2.5" />
+            <path d="M11 14L11 22" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" />
+            <path d="M18 9L18 27" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" />
+            <path d="M25 14L25 22" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" />
+            <circle cx="18" cy="18" r="4" fill="currentColor" />
+          </svg>
         </div>
-        <ul class="about-ul">
-          <li><a href="./index.html">Главная</a></li>
-          <li><a href="./services.html" class="services-btn">Услуги</a></li>
-          <li><a href="./about.html">Портфолио</a></li>
-          <li><a href="./contacts.html" class="contact-btn">Контакты</a></li>
+        <a class="logo__text" href="./index.html"><strong>WAVEFORM</strong></a>
+      </div>
+
+      <!-- Навигация -->
+      <nav class="nav">
+        <ul class="nav__list">
+          <li><a href="./index.html" class="nav__link">Главная</a></li>
+          <li><a href="./services.html" class="nav__link active">Услуги</a></li>
+          <li><a href="./portfolio.html" class="nav__link">Портфолио</a></li>
+          <li><a href="./contacts.html" class="nav__link">Контакты</a></li>
         </ul>
       </nav>
     </div>
-        </header>
-                <!-- Блок 1: запись -->
-            <h3>🔴 Запись</h3>
-            <ul>
-                <li><strong>Запись вокала (соло, бэк-вокал)</strong> — Neumann U87, ламповые предусилители, бесшумная вокальная комната. Работа с дикцией, интонацией. <strong>1 500₽ / час</strong></li>
-                <li><strong>Запись живых инструментов</strong> — барабаны (8 каналов), рояль Yamaha, гитарные DI/микрофоны, бас, духовые, струнные. <strong>от 1 500 ₽ / час</strong></li>
-                <li><strong>Ансамблевая запись (группа целиком)</strong> — аутентичное "живое" звучание, изолированная барабанная кабина. <strong>4 000 – 6 000 ₽ / час</strong></li>
-                <li><strong>Запись подкастов и аудиокниг</strong> — чистый голос без эха, быстрый монтаж, подготовка к публикации. <strong>1 500 ₽ / час</strong></li>
-            </ul>
-            
-            <!-- Блок 2: сведение и мастеринг -->
-            <h3>⚙️ Сведение и мастеринг</h3>
-            <ul>
-                <li><strong>Сведение (Mixing)</strong> — баланс, панорама, динамическая обработка, эффекты. Работаем в стилях: Pop, Rock, Hip-Hop, Metal, EDM, Indie, Jazz. <strong>от 8 000 ₽ за трек</strong></li>
-                <li><strong>Мастеринг (Mastering)</strong> — финальная шлифовка. Громкость, плотность, подготовка для Apple Music, Spotify, ВК, YouTube. Соответствие LUFS-стандартам. <strong>2 000 ₽ за трек</strong></li>
-                <li><strong>Реставрация и ремикс старых записей</strong> — удаляем шумы, треск, щелчки. Чистка вокала от бытового фона. <strong>от 3 000 ₽ за трек</strong></li>
-                <li><strong>Сведение под минус / караоке</strong> — профессиональные минусовки с мелодией или без. <strong>5 000 – 7 000 ₽ за трек</strong></li>
-            </ul>
+  </header>
 
-            <!-- Блок 3: дополнительные услуги -->
-            <h3>🎼 Аранжировка и творческая помощь</h3>
-            <ul>
-                <li><strong>Аранжировка</strong> — напишем партии под ваш стиль (от симфонической оркестровки до электронного бита). <strong>от 15 000 ₽ за трек</strong></li>
-                <li><strong>Создание битов и инструменталов</strong> — уникальные минуса для рэпа, поп, r&b. <strong>5 000 – 10 000 ₽ за минус</strong></li>
-                <li><strong>Репетиционная база (почасовая аренда)</strong> — оборудованная комната с мониторами, микрофонами, зоной отдыха. <strong>800 – 1 200 ₽ / час</strong></li>
-                <li><strong>Консультация звукорежиссёра</strong> — помощь в выстраивании домашней студии, советы по сведению. <strong>2 500 ₽ / час (первый час бесплатно при заказе услуги)</strong></li>
-            </ul>
-        </article>
+  <!-- ===== MAIN CONTENT ===== -->
+  <main>
+    <section class="services">
+      <div class="container">
+        <!-- Заголовок страницы -->
+        <div class="services__header">
+          <h1 class="services__title">
+            Наши <span class="services__title-accent">услуги</span>
+          </h1>
+          <p class="services__subtitle">
+            Профессиональный подход к каждому проекту. От записи до мастеринга — мы создаем звук, который звучит.
+          </p>
+        </div>
 
-        <hr>
+        <!-- ===== БЛОК 1: ЗАПИСЬ ===== -->
+        <div class="service-category">
+          <div class="service-category__header">
+            <span class="service-category__icon">🎙️</span>
+            <h2 class="service-category__title">Запись</h2>
+          </div>
+          <div class="service-grid">
+            <div class="service-card">
+              <h3 class="service-card__title">Запись вокала</h3>
+              <p class="service-card__desc">Соло, бэк-вокал. Neumann U87, ламповые предусилители, бесшумная вокальная комната. Работа с дикцией, интонацией.</p>
+              <div class="service-card__price">1500₽ / час</div>
+            </div>
+            <div class="service-card">
+              <h3 class="service-card__title">Запись живых инструментов</h3>
+              <p class="service-card__desc">Барабаны (8 каналов), рояль Yamaha, гитарные DI/микрофоны, бас, духовые, струнные.</p>
+              <div class="service-card__price">1500₽ / час</div>
+            </div>
+            <div class="service-card">
+              <h3 class="service-card__title">Ансамблевая запись</h3>
+              <p class="service-card__desc">Аутентичное "живое" звучание, изолированная барабанная кабина. Запись группы целиком.</p>
+              <div class="service-card__price">5000₽ / час</div>
+            </div>
+            <div class="service-card">
+              <h3 class="service-card__title">Запись подкастов и аудиокниг</h3>
+              <p class="service-card__desc">Чистый голос без эха, быстрый монтаж, подготовка к публикации.</p>
+              <div class="service-card__price">1500₽ / час</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ===== БЛОК 2: СВЕДЕНИЕ И МАСТЕРИНГ ===== -->
+        <div class="service-category">
+          <div class="service-category__header">
+            <span class="service-category__icon">⚙️</span>
+            <h2 class="service-category__title">Сведение и мастеринг</h2>
+          </div>
+          <div class="service-grid">
+            <div class="service-card">
+              <h3 class="service-card__title">Сведение (Mixing)</h3>
+              <p class="service-card__desc">Баланс, панорама, динамическая обработка, эффекты. Стили: Pop, Rock, Hip-Hop, Metal, EDM, Indie, Jazz.</p>
+              <div class="service-card__price">8000₽ / трек</div>
+            </div>
+            <div class="service-card">
+              <h3 class="service-card__title">Мастеринг (Mastering)</h3>
+              <p class="service-card__desc">Финальная шлифовка. Громкость, плотность, подготовка для Apple Music, Spotify, ВК, YouTube. Соответствие LUFS-стандартам.</p>
+              <div class="service-card__price">2000₽ / трек</div>
+            </div>
+            <div class="service-card">
+              <h3 class="service-card__title">Реставрация записей</h3>
+              <p class="service-card__desc">Удаляем шумы, треск, щелчки. Чистка вокала от бытового фона. Ремикс старых записей.</p>
+              <div class="service-card__price">3000₽ / трек</div>
+            </div>
+            <div class="service-card">
+              <h3 class="service-card__title">Сведение под минус / караоке</h3>
+              <p class="service-card__desc">Профессиональные минусовки с мелодией или без.</p>
+              <div class="service-card__price">6000₽ / трек</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ===== БЛОК 3: АРАНЖИРОВКА ===== -->
+        <div class="service-category">
+          <div class="service-category__header">
+            <span class="service-category__icon">🎼</span>
+            <h2 class="service-category__title">Аранжировка и творческая помощь</h2>
+          </div>
+          <div class="service-grid">
+            <div class="service-card">
+              <h3 class="service-card__title">Аранжировка</h3>
+              <p class="service-card__desc">Напишем партии под ваш стиль — от симфонической оркестровки до электронного бита.</p>
+              <div class="service-card__price">15000₽ / трек</div>
+            </div>
+            <div class="service-card">
+              <h3 class="service-card__title">Создание битов и инструменталов</h3>
+              <p class="service-card__desc">Уникальные минуса для рэпа, поп, R&B.</p>
+              <div class="service-card__price">7500₽ / минус</div>
+            </div>
+            <div class="service-card">
+              <h3 class="service-card__title">Репетиционная база</h3>
+              <p class="service-card__desc">Оборудованная комната с мониторами, микрофонами, зоной отдыха. Почасовая аренда.</p>
+              <div class="service-card__price">1000₽ / час</div>
+            </div>
+            <div class="service-card">
+              <h3 class="service-card__title">Консультация звукорежиссёра</h3>
+              <p class="service-card__desc">Помощь в выстраивании домашней студии, советы по сведению. Первый час бесплатно при заказе услуги.</p>
+              <div class="service-card__price">2500₽ / час</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
     </section>
-  <footer>
-    <div class="index-footer">
-      <p><strong>WAVEFORM</strong> — цифровая экосистема звука и визуала.</p>
-      <p>© 2026 WAVEFORM. Все права защищены.</p>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <strong>WAVEFORM</strong> — цифровая экосистема звука и визуала.
+      </div>
+      <div class="footer__copy">
+        © 2026 WAVEFORM. Все права защищены.
+      </div>
     </div>
   </footer>
+
 </body>
 </html>

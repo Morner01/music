@@ -1,71 +1,128 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WAVEFORM - Контакты</title>
-  <link rel="stylesheet" href="css/contacts.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WAVEFORM — Контакты</title>
+  <link rel="stylesheet" href="css/contacts.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700;14..32,800;14..32,900&display=swap" rel="stylesheet" />
 </head>
 <body>
-  <header>
-    <div>
-      <!-- Навигационное меню -->
-      <nav class="logo">
-        <!-- Контакты -->
-        <div>
-          <strong>WAVEFORM</strong>
+
+  <!-- ===== HEADER / НАВИГАЦИЯ ===== -->
+  <header class="header">
+    <div class="container header__inner">
+      <!-- Логотип -->
+      <div class="logo">
+        <div class="logo__icon">
+          <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="3" y="3" width="30" height="30" rx="8" stroke="currentColor" stroke-width="2.5" />
+            <path d="M11 14L11 22" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" />
+            <path d="M18 9L18 27" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" />
+            <path d="M25 14L25 22" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" />
+            <circle cx="18" cy="18" r="4" fill="currentColor" />
+          </svg>
         </div>
-        <ul class="about-ul">
-          <li><a href="./index.html">Главная</a></li>
-          <li><a href="./services.html" class="services-btn">Услуги</a></li>
-          <li><a href="./about.html">Портфолио</a></li>
-          <li><a href="./contacts.html" class="contact-btn">Контакты</a></li>
+        <a class="logo__text" href="./index.html"><strong>WAVEFORM</strong></a>
+      </div>
+
+      <!-- Навигация -->
+      <nav class="nav">
+        <ul class="nav__list">
+          <li><a href="./index.html" class="nav__link">Главная</a></li>
+          <li><a href="./services.html" class="nav__link">Услуги</a></li>
+          <li><a href="./portfolio.html" class="nav__link">Портфолио</a></li>
+          <li><a href="./contacts.html" class="nav__link active">Контакты</a></li>
         </ul>
       </nav>
     </div>
   </header>
-        <!-- Блок "Контакты" -->
-    <section>
-      <div>
-        <p>Свяжитесь с нами, чтобы обсудить ваш проект</p>
-      </div>
-      <div>
-        <div>
-          <p>📍 Санкт-Петербург ул. Льва Толстого, д. 9, литера Б, цокольный этаж, вход со двора-колодца / Онлайн</p>
-          <p>📧 hello@waveform.ru</p>
-          <div>
-            <p>Соцсети:</p>
-            <ul>
-              <li><a href="#">VK</a></li>
-              <li><a href="#">Max</a></li>
-            </ul>
-          </div>
+
+  <!-- ===== MAIN CONTENT ===== -->
+  <main>
+    <section class="contacts">
+      <div class="container">
+        <!-- Заголовок страницы -->
+        <div class="contacts__header">
+          <h1 class="contacts__title">
+            Свяжитесь <span class="contacts__title-accent">с нами</span>
+          </h1>
+          <p class="contacts__subtitle">
+            Обсудим ваш проект и подберем идеальное решение
+          </p>
         </div>
-        <div>
-          <form class="user-form" id="contactForm">
-            <p>
-              <label for="name">Имя:</label><br>
-              <input type="text" id="name" name="name" placeholder="Иван">
-            </p>
-            <p>
-              <label for="email">Email:</label><br>
-              <input type="email" id="email" name="email" placeholder="user@example.com">
-            </p>
-            <p>
-              <label for="msg">Сообщение:</label><br>
-              <textarea id="msg" name="message" rows="3" placeholder="Расскажите о задаче..."></textarea>
-            </p>
-            <button type="submit" id="submitButton" class="submitButton">Отправить</button>
-          </form>
-          <script src="JS/contacts.js"></script>
+
+        <!-- Контент: контакты + форма -->
+        <div class="contacts__grid">
+          <!-- Левая колонка: информация -->
+          <div class="contacts__info">
+            <div class="info__item">
+              <span class="info__icon">📍</span>
+              <div>
+                <h3 class="info__title">Адрес</h3>
+                <p class="info__text">Санкт-Петербург, ул. Льва Толстого, д. 9, литера Б<br />цокольный этаж, вход со двора-колодца</p>
+                <p class="info__text info__text--online">Также работаем онлайн</p>
+              </div>
+            </div>
+
+            <div class="info__item">
+              <span class="info__icon">📧</span>
+              <div>
+                <h3 class="info__title">Email</h3>
+                <p class="info__text"><a href="mailto:hello@waveform.ru" class="info__link">hello@waveform.ru</a></p>
+              </div>
+            </div>
+
+            <div class="info__item">
+              <span class="info__icon">🌐</span>
+              <div>
+                <h3 class="info__title">Соцсети</h3>
+                <div class="info__social">
+                  <a href="#" style="color:#4a9eff;" class="social__link">VK</a>
+                  <a href="#" style="color: #007AFF;"  class="social__link">MAX</a>
+                  <a href="#" style="color: red;" class="social__link">YouTube</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Правая колонка: форма -->
+          <div class="contacts__form">
+            <form class="form" id="contactForm">
+              <div class="form__group">
+                <label for="name" class="form__label">Имя</label>
+                <input type="text" id="name" name="name" class="form__input" placeholder="Иван" required />
+              </div>
+              <div class="form__group">
+                <label for="email" class="form__label">Email</label>
+                <input type="email" id="email" name="email" class="form__input" placeholder="user@example.com" required />
+              </div>
+              <div class="form__group">
+                <label for="msg" class="form__label">Сообщение</label>
+                <textarea id="msg" name="message" class="form__textarea" rows="4" placeholder="Расскажите о задаче..."></textarea>
+              </div>
+              <button type="submit" id="submitButton" class="btn btn--primary form__submit">Отправить</button>
+            </form>
+          </div>
         </div>
       </div>
     </section>
-  <footer>
-    <div class="index-footer">
-      <p><strong>WAVEFORM</strong> — цифровая экосистема звука и визуала.</p>
-      <p>© 2026 WAVEFORM. Все права защищены.</p>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <strong>WAVEFORM</strong> — цифровая экосистема звука и визуала.
+      </div>
+      <div class="footer__copy">
+        © 2026 WAVEFORM. Все права защищены.
+      </div>
     </div>
   </footer>
+
+  <script src="JS/contacts.js"></script>
 </body>
 </html>
