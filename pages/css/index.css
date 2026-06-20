@@ -1,3 +1,4 @@
+/* eslint-disable css/use-baseline */
 *,
 *::before,
 *::after {
@@ -81,6 +82,13 @@ ul {
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
+
+@supports not (background-clip: text) {
+  .logo__text strong {
+    background: none;
+    -webkit-text-fill-color: #b8a0f0;
+    color: #b8a0f0;
+  }
 
 /* Навигация */
 .nav__list {
@@ -384,4 +392,5 @@ ul {
     text-align: center;
     gap: 8px;
   }
+}
 }
