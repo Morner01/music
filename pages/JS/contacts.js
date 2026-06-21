@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 message: message
             };
             
-            const backendUrl = 'https://waveformback.duckdns.org/book/index';
+            const backendUrl = 'https://waveformback.duckdns.org/api/feedback';
 
             try {
                 const response = await fetch(backendUrl, {

@@ -54,10 +54,10 @@
           </p>
         </div>
 
-        <!-- Контент: контакты + форма -->
-        <div class="contacts__grid">
-          <!-- Левая колонка: информация -->
-          <div class="contacts__info">
+        <!-- Контент: только контакты (без формы) -->
+        <div class="contacts__grid contacts__grid--single">
+          <!-- Контактная информация -->
+          <div class="contacts__info contacts__info--centered">
             <div class="info__item">
               <span class="info__icon">📍</span>
               <div>
@@ -81,30 +81,11 @@
                 <h3 class="info__title">Соцсети</h3>
                 <div class="info__social">
                   <a href="#" style="color:#4a9eff;" class="social__link">VK</a>
-                  <a href="#" style="color: #007AFF;"  class="social__link">MAX</a>
+                  <a href="#" style="color: #007AFF;" class="social__link">MAX</a>
                   <a href="#" style="color: red;" class="social__link">YouTube</a>
                 </div>
               </div>
             </div>
-          </div>
-
-          <!-- Правая колонка: форма -->
-          <div class="contacts__form">
-            <form class="form" id="contactForm">
-              <div class="form__group">
-                <label for="name" class="form__label">Имя</label>
-                <input type="text" id="name" name="name" class="form__input" placeholder="Иван" required />
-              </div>
-              <div class="form__group">
-                <label for="email" class="form__label">Email</label>
-                <input type="email" id="email" name="email" class="form__input" placeholder="user@example.com" required />
-              </div>
-              <div class="form__group">
-                <label for="msg" class="form__label">Сообщение</label>
-                <textarea id="msg" name="message" class="form__textarea" rows="4" placeholder="Расскажите о задаче..."></textarea>
-              </div>
-              <button type="submit" id="submitButton" class="btn btn--primary form__submit">Отправить</button>
-            </form>
           </div>
         </div>
       </div>
@@ -123,6 +104,5 @@
     </div>
   </footer>
 
-  <script src="JS/contacts.js"></script>
 </body>
 </html>

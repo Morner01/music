@@ -468,3 +468,29 @@ ul {
     gap: 8px;
   }
 }
+
+/* ===== УДАЛЕНИЕ ФОРМЫ И ЦЕНТРИРОВАНИЕ ===== */
+.contacts__form {
+  display: none;
+}
+
+.contacts__grid--single {
+  display: flex;
+  justify-content: center;
+  grid-template-columns: none;
+}
+
+.contacts__info--centered {
+  max-width: 700px;
+  width: 100%;
+}
+
+@media (max-width: 1024px) {
+  .contacts__grid--single {
+    grid-template-columns: none;
+  }
+  
+  .contacts__info--centered {
+    max-width: 100%;
+  }
+}
