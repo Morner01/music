@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 message: message
             };
             
-            const backendUrl = 'https://httpbin.org/post';
+            const backendUrl = 'https://waveformback.duckdns.org/book/index';
 
             try {
                 const response = await fetch(backendUrl, {
