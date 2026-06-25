@@ -1,3 +1,4 @@
+// В данный момент функцию отправки заявок выполняет страница backend. Код остаётся как архив
 document.addEventListener('DOMContentLoaded', function() {
         const submitBtn = document.getElementById('submitButton');
         
